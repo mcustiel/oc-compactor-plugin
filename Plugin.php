@@ -19,7 +19,7 @@ class Plugin extends PluginBase
      */
     public function boot()
     {
-        if (Config::get('mcustiel.compactpages::compactation.enabled')) {
+        if (Config::get('mcustiel.compactor::compactation.enabled')) {
             Event::listen('cms.page.postprocess', function ($controller, $url, $page, $dataHolder) {
                 $compactor = App::make(
                     Config::get('mcustiel.compactpages::compactation.compactor')
