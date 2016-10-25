@@ -5,7 +5,7 @@ OctoberCMS plugin that provides HTML code minification.
 Default configuration for the plugin is:
 
 * config.php:
-```
+```php
 return [
     'compactation' => [
         'enabled' => false,
