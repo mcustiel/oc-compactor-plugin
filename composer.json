@@ -1,0 +1,17 @@
+{
+    "name": "mcustiel/compactor-plugin",
+    "type": "october-plugin",
+    "description": "Provides HTML minification",
+    "keywords": ["october", "cms", "html", "minification", "compactation"],
+    "repositories": [ 
+        {
+            "type": "vcs",
+            "url": "https://github.com/mcustiel/phpwee-php-minifier"
+        }
+    ],
+    "require": {
+        "searchturbine/phpwee-php-minifier": "*"
+    },
+    "minimum-stability" : "dev",
+    "prefer-stable" : true
+}
