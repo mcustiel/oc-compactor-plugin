@@ -22,7 +22,7 @@ class Plugin extends PluginBase
         if (Config::get('mcustiel.compactor::compactation.enabled')) {
             Event::listen('cms.page.postprocess', function ($controller, $url, $page, $dataHolder) {
                 $compactor = App::make(
-                    Config::get('mcustiel.compactpages::compactation.compactor')
+                    Config::get('mcustiel.compactor::compactation.compactor')
                 );
                 $dataHolder->content = $compactor->compactHtml($dataHolder->content);
             });
